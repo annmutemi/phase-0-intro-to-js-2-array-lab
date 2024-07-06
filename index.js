@@ -27,12 +27,16 @@ function prependCat(name){
     return cat1
 }
 
-function  removeLastCat(){
-    return cats.toSpliced(2)
+function removeLastCat(){
+    let cat1 = [...cats]
+    cat1.pop()
+    return cat1
 }
 
 function removeFirstCat(){
-    return cats.toSpliced(0,1)
+    let cat1 = [...cats]
+    cat1.shift()
+    return cat1
 }
 
    
